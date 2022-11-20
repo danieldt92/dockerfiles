@@ -1,3 +1,4 @@
 # dockerfiles
 
-Simple tomcat Docker image creation and container run, Jenkins triggered.
+Simple and single Docker-Tomcat image orchestrator, Jenkins triggered.
+SH script stop all containers and remove them, then remove all images, build a new one using the dockerfile and run a container.
