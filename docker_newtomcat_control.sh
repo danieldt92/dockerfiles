@@ -1,4 +1,5 @@
 docker stop $(docker ps -aq)
+echo "Hola"
 if [ $? -eq 0 ]
 then
         docker rm $(docker ps -aq)
