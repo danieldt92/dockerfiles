@@ -1,6 +1,6 @@
 # dockerfiles
 
-Simple and single Docker-Tomcat image orchestrator, Jenkins triggered.
+Simple and single Docker-Tomcat-Java App image orchestrator, Jenkins triggered.
 \
 SH script stop all containers and remove them, then remove all images, build a new one using the dockerfile and run a container.
 \
