@@ -12,5 +12,6 @@ RUN rm apache-tomcat-10.0.27.tar.gz
 COPY tomcat-users.xml /opt/tomcat/conf/
 COPY context.xml /opt/tomcat/webapps/manager/META-INF/context.xml
 COPY context.xml /opt/tomcat/webapps/host-manager/META-INF/context.xml
+COPY webapp.wav /opt/tomcat/webapps/
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
