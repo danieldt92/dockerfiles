@@ -1,0 +1,18 @@
+---
+- hosts: dockerhost
+
+  tasks:
+    - name: Stop Existing Container
+      command: docker container stop regapp-server
+      ignore_errors: yes
+
+    - name: Remove Existing Container
+      command: docker rm -f regapp-server
+      ignore_errors: yes
+
+    - name: Remove Existing Image
+      command: docker image rm -f netrotten/reggapp:latest
+      ignore_errors: yes
+
+    - name: Create Container
+      command: docker run -d --name regapp-server -p 8082:8080 netrotten/reggapp:latest
